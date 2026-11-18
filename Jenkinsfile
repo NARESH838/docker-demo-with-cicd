@@ -8,6 +8,12 @@ pipeline {
                 echo 'Starting Flask Docker CI/CD Project'
             }
         }
+        stage('Docker check'){
+            steps{
+                bat 'docker --version'
+                bat 'docker info'
+            }
+        }
 
         stage('Build') {
             steps {
