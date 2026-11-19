@@ -13,6 +13,7 @@ This project demonstrates how a Flask application can be packaged and run inside
 * Git
 * GitHub
 * GitHub Actions
+* jenkins
 
 ## Project Structure
 
@@ -38,7 +39,7 @@ The Docker container runs the application and maps container port `5005` to port
 
 Browser
    |
-   | http://localhost:5005
+   | http://localhost:5000
    |
 Docker Container
    |
