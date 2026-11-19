@@ -123,6 +123,7 @@ Through this project, I practiced:
 * Using `.dockerignore`
 * Using Git and GitHub for version control
 * cicd using github actions
+* Created a Jenkins pipeline using Jenkinsfile to automate GitHub checkout, Docker image building, and container execution.Added container verification and application testing stages to improve deployment reliability.
 
 ## Author
 Naresh 
