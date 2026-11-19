@@ -10,8 +10,8 @@ pipeline {
         }
         stage('Docker check'){
             steps{
-                bat '"C:/Users/Dharmesh Nayak/AppData/Local/Programs/DockerDesktop/resources/bin/docker" --version'
-                bat '"C:/Users/Dharmesh Nayak/AppData/Local/Programs/DockerDesktop/resources/bin/docker" info'
+                bat 'docker --version'
+                
             }
         }
 
