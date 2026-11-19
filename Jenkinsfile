@@ -24,15 +24,10 @@ pipeline {
             }
         }
 
-        stage('Build') {
+       
+        stage('Testing application') {
             steps {
-                echo 'Preparing Docker Build'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo 'Testing Flask Application'
+                bat 'curl -f http://localhost:5000'
             }
         }
 
