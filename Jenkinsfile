@@ -15,6 +15,7 @@ pipeline {
         }
          stage('Run Docker conatiner'){
             steps{
+                bat '"C:/Users/Dharmesh Nayak/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" rm -f cicd-conta1'
                 bat '"C:/Users/Dharmesh Nayak/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" run -d -p 5000:5000 --name cicd-conta1 cicd-demo1:latest '
             }
         }
