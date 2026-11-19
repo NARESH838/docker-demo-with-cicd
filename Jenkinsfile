@@ -13,6 +13,16 @@ pipeline {
                 bat '"C:/Users/Dharmesh Nayak/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" build -t cicd-demo1:latest .'
             }
         }
+         stage('Run Docker conatiner'){
+            steps{
+                bat '"C:/Users/Dharmesh Nayak/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" run -d -p 6000:5000 --name cicd-conta cicd-demo1:latest '
+            }
+        }
+         stage('checking conatiner'){
+            steps{
+                bat '"C:/Users/Dharmesh Nayak/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" ps '
+            }
+        }
 
         stage('Build') {
             steps {
