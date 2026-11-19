@@ -8,10 +8,9 @@ pipeline {
                 echo 'Starting Flask Docker CI/CD Project'
             }
         }
-        stage('Docker check'){
+        stage('Build Docker image'){
             steps{
-                bat 'docker --version'
-                
+                bat '"C:/Users/Dharmesh Nayak/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" build -t cicd-demo1:latest .'
             }
         }
 
